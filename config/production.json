@@ -1,0 +1,27 @@
+{
+    "server": {
+      "port": 8080,
+      "host": "0.0.0.0"
+    },
+    "database": {
+      "url": "mongodb://your_production_mongodb_url"
+    },
+    "jwt": {
+      "secret": "your_production_jwt_secret",
+      "expiresIn": "7d"
+    },
+    "ai": {
+      "openai_api_key": "your_production_openai_api_key"
+    },
+    "blockchain": {
+      "network": "mainnet",
+      "contract_address": "your_production_contract_address"
+    },
+    "spheron": {
+      "token": "your_production_spheron_token"
+    },
+    "logging": {
+      "level": "info"
+    }
+  }
+  

@@ -1,0 +1,28 @@
+# gpu.yml
+version: "1.0"
+
+compute:
+  gpu: 1
+  cpu: 2
+  memory: 8
+
+environment:
+  image: nvidia/cuda:11.4.2-base-ubuntu20.04
+  setup:
+    - apt-get update && apt-get install -y python3-pip
+    - pip3 install torch torchvision torchaudio
+    - pip3 install -r requirements.txt
+
+run:
+  - python3 app.py
+
+scaling:
+  min_instances: 1
+  max_instances: 3
+
+storage:
+  - mount: /data
+    size: 10Gi
+
+networking:
+  - port: 8080

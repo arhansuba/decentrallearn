@@ -1,7 +1,74 @@
+# Node.js
 node_modules/
-.env
-venv/
+npm-debug.log
+yarn-error.log
+
+# Python
 __pycache__/
-build/
+*.py[cod]
+venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build files
 dist/
+build/
+*.bundle.js
+
+# Logs
+logs
 *.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+
+# Blockchain
+artifacts/
+cache/
+
+# AI models
+*.pth
+*.h5
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# .env.example
+# Server
+PORT=3000
+HOST=localhost
+
+# Database
+MONGODB_URI=mongodb://localhost:27017/decentrallearn
+
+# JWT
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRES_IN=1d
+
+# AI
+OPENAI_API_KEY=your_openai_api_key
+
+# Blockchain
+ETHEREUM_RPC_URL=https://mainnet.infura.io/v3/YOUR-PROJECT-ID
+ETHEREUM_PRIVATE_KEY=your_ethereum_private_key
+TOKEN_REWARDS_CONTRACT_ADDRESS=your_contract_address
+
+# Spheron
+SPHERON_TOKEN=your_spheron_token
+
+# Logging
+LOG_LEVEL=debug

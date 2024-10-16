@@ -1,0 +1,26 @@
+{
+    "server": {
+      "port": 3000,
+      "host": "localhost"
+    },
+    "database": {
+      "url": "mongodb://localhost:27017/decentrallearn_dev"
+    },
+    "jwt": {
+      "secret": "your_development_jwt_secret",
+      "expiresIn": "1d"
+    },
+    "ai": {
+      "openai_api_key": "your_development_openai_api_key"
+    },
+    "blockchain": {
+      "network": "hardhat",
+      "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+    },
+    "spheron": {
+      "token": "your_development_spheron_token"
+    },
+    "logging": {
+      "level": "debug"
+    }
+  }
