@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -15,8 +14,8 @@ contract TokenRewards is ERC20, Ownable, Pausable {
     event InstructorRemoved(address instructor);
     event RewardIssued(address student, uint256 amount);
 
-    constructor() ERC20("DecentralLearn Token", "DLT") {
-        _mint(msg.sender, 100000 * 10**18); // Mint 100,000 tokens to the contract deployer
+    constructor(address initialOwner) ERC20("DecentralLearn Token", "DLT") Ownable(initialOwner) {
+        _mint(initialOwner, 100000 * 10**18); // Mint 100,000 tokens to the contract deployer
     }
 
     modifier onlyInstructor() {
